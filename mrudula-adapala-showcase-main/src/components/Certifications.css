@@ -1,0 +1,83 @@
+.certifications-section {
+  padding: 5rem 1rem;
+  background-color: hsl(var(--secondary));
+}
+
+.certifications-container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.certifications-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: hsl(var(--foreground));
+}
+
+.certifications-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.certifications-card {
+  background-color: hsl(var(--card));
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+}
+
+.certifications-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.certifications-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(var(--card-foreground));
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.certification-icon {
+  color: hsl(var(--primary));
+}
+
+.activity-icon {
+  color: hsl(var(--accent));
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: hsl(var(--card-foreground) / 0.9);
+}
+
+.certification-checkmark {
+  color: hsl(var(--accent));
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.certification-star {
+  color: hsl(var(--primary));
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
